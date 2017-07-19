@@ -5,7 +5,7 @@ defmodule Verily.Router do
   plug :dispatch
 
   get "/favicon.ico" do
-    send_resp(conn, 400, "not found")
+    send_resp(conn, 404, "not found")
   end
 
   forward "/", to: Verily.Index

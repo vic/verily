@@ -37,8 +37,10 @@ config :verily, Verily.Endpoint,
 config :verily,
   namespace: Verily
 
-
 config :phoenix, :stacktrace_depth, 20
+
+config :verily, Verily.Mailer,
+  adapter: Bamboo.LocalAdapter
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment

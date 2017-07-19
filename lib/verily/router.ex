@@ -8,6 +8,7 @@ defmodule Verily.Router do
     send_resp(conn, 404, "not found")
   end
 
+  forward "/inbox", to: Bamboo.SentEmailViewerPlug
   forward "/", to: Verily.Index
 
 end

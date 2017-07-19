@@ -38,6 +38,7 @@ defmodule Verily.Mixfile do
       {:cowboy, "~> 1.0"},
       {:phoenix, "~> 1.2"},
       {:phoenix_pubsub, "~> 1.0"},
+      {:bamboo, "~> 1.0.0-rc.1"}
     ]
   end
 end

@@ -25,13 +25,14 @@ config :verily, Verily.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: [],
   render_errors: [view: Verily.ErrorView, accepts: ~w[json]],
   pubsub: [name: Verily.PubSub,
            adapter: Phoenix.PubSub.PG2],
   http: [port: 4000],
   url: [host: "localhost", port: 4000],
-  secret_key_base: "ITDofrt09K04kIyp7F5FJVHRTLuPjiRDlt0U1owtIzz2K93K1YiUM0EfyGjQzhFL"
+  secret_key_base: "ITDofrt09K04kIyp7F5FJVHRTLuPjiRDlt0U1owtIzz2K93K1YiUM0EfyGjQzhFL",
+  watchers: [node: ["./node_modules/.bin/webpack-dev-server", "--watch-stdin", "--colors",
+                   cd: Path.expand("../", __DIR__)]]
 
 config :verily,
   namespace: Verily

@@ -9,7 +9,6 @@ const render = _ => {
 }
 
 render()
-console.log(module.hot)
 
 if (module.hot) {
   module.hot.accept('./app', render)

@@ -1,14 +1,14 @@
 defmodule Verily.Router do
-  use Plug.Router
+  use Phoenix.Router
 
-  plug :match
-  plug :dispatch
+  forward "/inbox", Bamboo.SentEmailViewerPlug, []
 
-  get "/favicon.ico" do
-    send_resp(conn, 404, "not found")
+  scope "/graphql" do
+    get "/", Absinthe.Plug.GraphiQL, schema: Verily.GQL
+    forward "/", Absinthe.Plug, schema: Verily.GQL
   end
 
-  forward "/inbox", to: Bamboo.SentEmailViewerPlug
-  forward "/", to: Verily.Index
+  get "/favicon.ico", Verily.Index, [:not_found]
+  forward "/", Verily.Index, []
 
 end

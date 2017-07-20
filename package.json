@@ -8,6 +8,9 @@
     "webpack-dev-server": "^2.5.1"
   },
   "dependencies": {
+    "apollo-client": "^1.9.0-0",
+    "apollo-phoenix-websocket": "^0.5.1",
+    "graphql-tag": "^2.4.2",
     "ramda": "^0.24.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

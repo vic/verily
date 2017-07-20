@@ -38,7 +38,9 @@ defmodule Verily.Mixfile do
       {:cowboy, "~> 1.0"},
       {:phoenix, "~> 1.2"},
       {:phoenix_pubsub, "~> 1.0"},
-      {:bamboo, "~> 1.0.0-rc.1"}
+      {:bamboo, "~> 1.0.0-rc.1"},
+      {:absinthe, github: "absinthe-graphql/absinthe", branch: "subscriptions", override: true},
+      {:absinthe_phoenix, github: "absinthe-graphql/absinthe_phoenix", branch: "master", override: true},
     ]
   end
 end

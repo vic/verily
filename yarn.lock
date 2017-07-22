@@ -167,9 +167,8 @@ apollo-client@^1.9.0-0:
     "@types/graphql" "^0.9.0"
     "@types/isomorphic-fetch" "0.0.34"
 
-apollo-phoenix-websocket@^0.5.1:
+"apollo-phoenix-websocket@file:../apollo-phoenix-websocket/":
   version "0.5.1"
-  resolved "https://registry.yarnpkg.com/apollo-phoenix-websocket/-/apollo-phoenix-websocket-0.5.1.tgz#8457d3e1aef56dd8a3d91dd2c4e23e6c04ab8af3"
   dependencies:
     apollo-client "^0.6.0"
     phoenix "^1.2.1"
@@ -4022,9 +4021,9 @@ rechoir@^0.6.2:
   dependencies:
     resolve "^1.1.6"
 
-recompose@^0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.24.0.tgz#262e93f974439eb17e7779824d88cce90492a5dd"
+recompose@0.23.5:
+  version "0.23.5"
+  resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.23.5.tgz#72ac8261246bec378235d187467d02a721e8b1de"
   dependencies:
     change-emitter "^0.1.2"
     fbjs "^0.8.1"

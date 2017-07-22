@@ -1,8 +1,9 @@
 defmodule Verily.Endpoint do
 
   use Phoenix.Endpoint, otp_app: :verily
-
-  # socket "/graphql", Bussi.HTTP.GQL.Socket
+  use Absinthe.Phoenix.Endpoint
+  
+  socket "/graphql", Verily.GQL.Socket
 
   if code_reloading? do
     plug Phoenix.CodeReloader

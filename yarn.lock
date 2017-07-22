@@ -168,11 +168,19 @@ apollo-client@^1.9.0-0:
     "@types/isomorphic-fetch" "0.0.34"
 
 "apollo-phoenix-websocket@file:../apollo-phoenix-websocket/":
-  version "0.5.1"
+  version "0.6.0"
   dependencies:
     apollo-client "^0.6.0"
     phoenix "^1.2.1"
-    ramda "^0.23.0"
+    ramda "^0.24.1"
+
+"apollo-phoenix-websocket@https://github.com/vic/apollo-phoenix-websocket#feature/subscription":
+  version "0.6.0"
+  resolved "https://github.com/vic/apollo-phoenix-websocket#945fc55a837e3c400c3f20c153c7269aebc86892"
+  dependencies:
+    apollo-client "^0.6.0"
+    phoenix "^1.2.1"
+    ramda "^0.24.1"
 
 aproba@^1.0.3:
   version "1.1.2"
@@ -3834,10 +3842,6 @@ querystringify@~1.0.0:
 ramda@^0.22.1:
   version "0.22.1"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.22.1.tgz#031da0c3df417c5b33c96234757eb37033f36a0e"
-
-ramda@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.23.0.tgz#ccd13fff73497a93974e3e86327bfd87bd6e8e2b"
 
 ramda@^0.24.1:
   version "0.24.1"

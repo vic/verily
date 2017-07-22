@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "apollo-client": "^1.9.0-0",
-    "apollo-phoenix-websocket": "file:../apollo-phoenix-websocket/",
+    "apollo-phoenix-websocket": "https://github.com/vic/apollo-phoenix-websocket#feature/subscription",
     "graphql-tag": "^2.4.2",
     "phoenix": "^1.2.1",
     "ramda": "^0.24.1",

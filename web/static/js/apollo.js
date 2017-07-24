@@ -1,3 +1,4 @@
+import moment from 'moment'
 import R from 'ramda'
 import xs from 'xstream'
 import ApolloClient from 'apollo-client'
@@ -10,11 +11,19 @@ const networkInterface = createNetworkInterface({
   logger: true
 })
 
+networkInterface.use([{
+  applyMiddleware({request}, next) {
+    request.context = {localtime: moment().format()}
+    next()
+  }
+}])
+
 const dataIdFromObject = R.path(['id'])
 
 export const client = new ApolloClient({
   networkInterface, dataIdFromObject
 })
+
 
 const streamedP = R.mapObjIndexed((promiseF, name) => R.pipe(
   promiseF,

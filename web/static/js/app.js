@@ -44,6 +44,9 @@ const DEVICE_TOKEN =
 
 const verifying$ = xs.create()
 
+// Send a hello query to the backend
+query.hello({}).addListener(console.log.bind(console, 'HELLO'))
+
 const emailLoginView = ({emailChange, submit, loading}) => (
   <Form onSubmit={submit}>
     <Form.Input label='Email' type='email' onChange={emailChange} />

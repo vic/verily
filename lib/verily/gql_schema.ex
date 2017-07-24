@@ -36,7 +36,10 @@ defmodule Verily.GQL.Schema do
     field :email, :string
   end
 
-  defp hello(_, _, _), do: {:ok, "WORLD"}
+  defp hello(_parent, _variables, opts) do
+    IO.inspect({:hello, opts})
+    {:ok, "WORLD"}
+  end
 
   defp email_login(_, %{email: email, device_token: device}, _) do
     {:ok, token} = Verify.verify_email(%{email: email}, device)

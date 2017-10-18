@@ -1,6 +1,6 @@
 # Verily
 
-This is a demo application to serve as an example of how to use [Apollo Phoenix Websocket][https://github.com/vic/apollo-phoenix-websocket] with Absinthe subscriptions.
+This is a demo application to serve as an example of how to use [Apollo Phoenix Websocket](https://github.com/vic/apollo-phoenix-websocket) with Absinthe subscriptions.
 
 Verily implements a mail authentication app, akin to Facebook AccountKit. That is, the user enters
 their email and clicks on `Login`, then the application awaits (via gql subscription) for the user
